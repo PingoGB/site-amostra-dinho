@@ -296,8 +296,8 @@ body {
   font-weight: 600;
   box-shadow: 0 4px 14px rgba(0,0,0,.06);
   transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
-  min-width: 2600px; /* Adicionado para largura igual aos cards */
-  justify-content: center; /* Centraliza o texto */
+  margin-left: 1250px;
+  
 
   }
   .botao:hover{
