@@ -1,0 +1,255 @@
+body {
+  margin: 0;
+  font-family: Poppins, Arial, sans-serif;
+  background: #f6f7f9;
+  color: #0f172a;
+}
+
+.navbar {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    z-index: 10; 
+  }
+  
+  .logo a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #222;
+    text-decoration: none;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    padding-right: 100px;
+  }
+  
+  .navbar li {
+    display: inline;
+  }
+  
+  .navbar a {
+    color: #222;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 20px;    
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .navbar a.active {
+    background-color: #e6eaf9; /* cor da “pill” */
+    font-weight: bold;
+  }
+  
+
+.topo {
+  background: linear-gradient(180deg, rgba(37,99,235,.15), rgba(37,99,235,0) 70%);
+  padding: 64px 16px 24px;
+  text-align: center;
+}
+.topo h1 {
+  margin: 0;
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 800;
+}
+.topo .azul { color: #2563eb; }
+.topo p {
+  color: #6b7280;
+  max-width: 760px;
+  margin: 12px auto 0;
+  font-size: clamp(14px, 2vw, 16px);
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px 56px;
+}
+
+.cartao {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,.08);
+  padding: 22px;
+  margin: 18px auto 28px;
+    flex: 1;
+  padding: 20px;
+  min-width: 350px; /* cada cartão mais largo */
+  transition: all 0.5 ease;
+}
+
+.cartao:hover{
+  transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+}
+.titulo-cartao {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  font-size: 18px;
+}
+
+.grade-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* continua 2 colunas */
+  gap: 24px; /* espaço entre os cartões */
+  max-width: 1000px; /* deixa a grade maior */
+  margin: 0 auto
+}
+@media (max-width: 900px) {
+  .grade-2 { grid-template-columns: 1fr; }
+}
+
+.caixa {
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 14px 16px;
+  margin-bottom: 12px;
+}
+
+
+.caixa strong {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+ol { padding-left: 20px; margin: 0; }
+ul { padding-left: 20px; margin: 0; }
+.lista li { margin: 6px 0; color: #374151; font-size: 14px; }
+.referencias li { margin: 5px 0; color: #475569; font-size: 14px; }
+
+.subtitulo-cartao {
+  margin: 0 0 8px;
+  font-weight: 700;
+  color: #f59e0b;
+}
+
+.navegacao {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+.botao {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 999px;
+  text-decoration: none;
+  color: #111827;
+  font-weight: 600;
+  box-shadow: 0 4px 14px rgba(0,0,0,.06);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.botao:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0,0,0,.08);
+}
+.chev { font-size: 18px; }
+
+.grade-2 > .cartao:first-child{
+  display: flex;               /* vira coluna */
+  flex-direction: column;
+}
+
+/* A caixa interna (onde está a lista) expande e remove o espaço de baixo */
+.grade-2 > .cartao:first-child .caixa{
+  flex: 1;                      /* cresce até a base do card */
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+}
+
+/* Deixa a lista preencher bem a área */
+.grade-2 > .cartao:first-child .caixa ol{
+  flex: 1;
+  margin: 0;
+  padding-left: 20px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #334155;}
+
+  .footer {
+    background-color: #0b2e59;
+    color: #fff;
+    padding: 40px 20px 20px;
+    font-family: Arial, sans-serif;
+    width: 100%; /* garante que o footer ocupe 100% da tela */
+    box-sizing: border-box; /* evita overflow por padding */
+}
+
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .footer-col {
+    flex: 1 1 250px;
+  }
+  
+  .footer-col h3 {
+    margin-bottom: 15px;
+  }
+  
+  .footer-col p, 
+  .footer-col ul {
+    margin: 5px 0;
+    font-size: 0.9rem;
+  }
+  
+  .footer-col ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-col ul li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-col ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  
+  .footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.2);
+    margin-top: 20px;
+    padding-top: 15px;
+    flex-wrap: wrap;
+    font-size: 0.8rem;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+  }
