@@ -372,8 +372,10 @@ body{
   text-decoration: none;
   color: #111827;
   font-weight: 600;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, .06);
+  box-shadow: 0 4px 14px rgba(0,0,0,.06);
   transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
+  margin-right: 130px;
+  margin-left: 130px;
 }
 
 .botao:hover {

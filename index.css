@@ -284,19 +284,21 @@ body {
     padding: 10px;
   }
   .botao{
-    display:inline-flex;
-    align-items:center;
-    gap:10px;
-    padding: 10px 16px;
-    background:#fff;
-    border:1px solid var(--anel);
-    border-radius: 999px;
-    text-decoration:none;
-    color:#111827;
-    font-weight:600;
-    box-shadow: 0 4px 14px rgba(0,0,0,.06);
-    transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
-    margin-left: auto; /* Alinha o botão à direita */
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  background: #fff;
+  border: 1px solid var(--anel);
+  border-radius: 999px;
+  text-decoration: none;
+  color: #111827;
+  font-weight: 600;
+  box-shadow: 0 4px 14px rgba(0,0,0,.06);
+  transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
+  min-width: 2600px; /* Adicionado para largura igual aos cards */
+  justify-content: center; /* Centraliza o texto */
+
   }
   .botao:hover{
     transform: translateY(-2px);
