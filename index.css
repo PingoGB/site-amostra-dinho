@@ -1,7 +1,7 @@
 body {
     width: 100%;
     margin: auto;
-    background: rgb(252, 252, 252);
+    background: rgb(230, 228, 228);
 }
 .navbar {
     background-color: #fff;
@@ -275,18 +275,36 @@ body {
     font-size: 25px;
     padding-left: 10px;
   }
-  .btn-conse{
-    text-align: right;
-    margin-right: 15px;
-    margin-bottom: 10px;
-    text-decoration: none;
-    background-color: rgb(230, 228, 228);
+  .navegacao{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:16px;
+    margin-top: 22px;
+    background: rgb(230, 228, 228);
+    padding: 10px;
   }
-  .btn-conse a{
-   text-decoration: none;
-   color: black;
-   font-size: 20px;
+  .botao{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    padding: 10px 16px;
+    background:#fff;
+    border:1px solid var(--anel);
+    border-radius: 999px;
+    text-decoration:none;
+    color:#111827;
+    font-weight:600;
+    box-shadow: 0 4px 14px rgba(0,0,0,.06);
+    transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
+    margin-left: auto; /* Alinha o botão à direita */
   }
+  .botao:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(0,0,0,.08);
+    background:#f9fafb;
+  }
+  .botao .chev{ font-size:18px; }
 
 /* FOOTER LOGARITMICO */
 

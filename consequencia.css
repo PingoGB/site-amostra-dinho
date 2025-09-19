@@ -177,8 +177,12 @@
   border-radius: 18px;
   box-shadow: 0 10px 25px rgba(0,0,0,.08);
   border:1px solid #e5e7eb;
+  transition: all 0.3s ease;
 }
-
+.cartao:hover{
+  transform: scale(1.02);
+  box-shadow: 0 15px 30px rgba(0,0,0,.12);
+}
 /* Título do card: alinhamento e ícone evidente */
 .titulo-cartao{
   gap: 10px;
@@ -213,8 +217,12 @@
   border-radius:18px;
   box-shadow: 0 10px 25px rgba(0,0,0,.08);
   padding:26px;
+  transition: all 0.3s ease;
 }
-
+.estatisticas:hover{
+  transform: scale(1.02);
+  box-shadow: 0 15px 30px rgba(0,0,0,.12);
+}
 /* Cards das estatísticas: “cartõezinhos” brancos */
 .grade-estats{ gap:16px; }
 .estat{

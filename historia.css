@@ -1,3 +1,6 @@
+body{
+  background-color: #f8fafc;
+}
 /* TIMELINE */
 .timeline-section {
   padding: 64px 20px;
@@ -294,16 +297,64 @@
   }
 }
 
-  .btn-conse{
-    text-align: right;
-    margin-right: 15px;
-    margin-bottom: 10px;
-    text-decoration: none;
+.navegacao {
+  display: flex;
+  justify-content: space-between; /* Distribui os botões nas extremidades */
+  align-items: center;
+  gap: 16px;
+  margin-top: 22px;
+  background: #f8fafc;
+  padding: 10px;
+}
+
+.botao {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  background: #fff;
+  border: 1px solid var(--anel);
+  border-radius: 999px;
+  text-decoration: none;
+  color: #111827;
+  font-weight: 600;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, .06);
+  transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
+}
+
+.botao:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, .08);
+  background: #f9fafb;
+}
+
+.botao .chev {
+  font-size: 18px;
+}
+  
+  .wc-grid {
+    display: flex;
+    justify-content: center; /* Centraliza os cards horizontalmente */
+    gap: 20px; /* Espaçamento entre os cards */
   }
-  .btn-conse a{
-   text-decoration: none;
-   color: black;
-   font-size: 20px;
+  
+  .wc-box {
+    display: inline-block; /* Faz o card ocupar apenas o espaço necessário */
+    width: fit-content; /* Ajusta o tamanho ao conteúdo */
+    padding: 20px;
+    text-align: center; /* Centraliza o texto dentro do card */
+    transition: transform 0.3s ease; /* Animação de aumento */
+    border: 1px solid #ccc; /* Adiciona uma borda para visualização */
+    border-radius: 8px; /* Bordas arredondadas */
+    background-color: #fff; /* Fundo branco para destaque */
+  }
+  
+  .wc-box:hover {
+    transform: scale(1.1); /* Aumenta o tamanho do card ao passar o mouse */
+  }
+  
+  .wc-panel {
+    margin-top: 10px; /* Espaçamento entre o título e o conteúdo */
   }
 
   .footer {
